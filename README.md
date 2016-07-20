@@ -4,3 +4,7 @@
  Ultimately, when we ran our data in Weka, we found that the highest indicator of homicide rate was population. This makes sense: as population rises, you’d expect homicide to rise proportionally. 
  
  However, since this model did not answer our central curiosity as to whether there was a link between internet use and homicide rates, we also ran our data in R, another statistical tool. R presented us with a model showing higher internet use as linked with lower homicide rates. Our theory of high internet use indicating a more educated, civilized culture with less homicide held. However, the p-value of this model was quite high, indicating that this seemingly potential link - and theory - is insignificant.
+ 
+ A high level view of our process - we downloaded three tables from the UN’s online databases, which we then cleaned for only the values we needed using our own Python code. We uploaded the cleaned data into SQLite, creating a SQLite database we could access through Python. We then wrote Python code to denormalize our data into one relational table, and finally, we performed numeric estimation and classification learning to mine for patterns in our data.
+ 
+ Check out our code and full report, which includes in-depth explanation of our process and results, confusion matrices, decision trees and data visualizations.
